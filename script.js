@@ -1,5 +1,10 @@
 // Display or UI
-import { TILE_STATUSES, createBoard, markTile } from "./minesweeper.js"
+import {
+  TILE_STATUSES,
+  createBoard,
+  markTile,
+  revealTile,
+} from "./minesweeper.js"
 
 const BOARD_SIZE = 10
 const NUMBER_OF_MINES = 10
@@ -16,6 +21,7 @@ board.forEach((row) => {
     // 2. Left click on tile
     tile.element.addEventListener("click", () => {
       // a. Reveal tile
+      revealTile(tile)
     })
 
     // 3. Right click on tile

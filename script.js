@@ -16,6 +16,7 @@ board.forEach((row) => {
 })
 boardElement.style.setProperty("--size", BOARD_SIZE)
 minesLeftText.textContent = NUMBER_OF_MINES
+
 // 2. Left click on tile
 // a. Reveal tile
 

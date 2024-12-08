@@ -1,3 +1,4 @@
+// This will be refactored with some functional programming.
 // Display or UI
 import {
   TILE_STATUSES,
